@@ -1,5 +1,6 @@
 %define		fversion	%(echo %{version} |tr r _)
 Summary:	WebLogic JRockit
+Summary(pl):	¦rodowisko WebLogic JRockit
 Name:		java-bea
 Version:	1.4.2r04
 Release:	0.1.1
@@ -17,8 +18,8 @@ Source0:	jrockit-j2sdk%{fversion}-linux-ipf.bin
 Source1:	%{name}.xml
 NoSource:	0
 URL:		http://www.bea.com/
+BuildRequires:	XFree86-libs
 BuildRequires:	rpm-build >= 4.3-0.20040107.21
-BuildRequires:	X11-libs
 Requires:	%{name}-jre = %{version}-%{release}
 Requires:	java-shared
 Provides:	jdk = %{version}
@@ -41,12 +42,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define	no_install_post_strip	1
 
 # rpm doesn't like strange version definitions provided by Sun's libs
-#%define		_noautoprov	'\\.\\./.*' '/export/.*'
+#%%define		_noautoprov	'\\.\\./.*' '/export/.*'
 # these with SUNWprivate.* are found as required, but not provided
 # the rest is because -jdbc wants unixODBC-devel(?)
-#%define		_noautoreq	'libjava.so(SUNWprivate_1.1)' 'libnet.so(SUNWprivate_1.1)' 'libverify.so(SUNWprivate_1.1)' 'libodbcinst.so' 'libodbc.so'
+#%%define		_noautoreq	'libjava.so(SUNWprivate_1.1)' 'libnet.so(SUNWprivate_1.1)' 'libverify.so(SUNWprivate_1.1)' 'libodbcinst.so' 'libodbc.so'
 # don't depend on other JRE/JDK installed on build host
-#%define		_noautoreqdep	libjava.so libjvm.so
+#%%define		_noautoreqdep	libjava.so libjvm.so
 
 %description
 Java Development Kit for Linux.
