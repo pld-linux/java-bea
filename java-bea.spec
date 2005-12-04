@@ -204,7 +204,7 @@ Plik wtyczki z obs³ug± Javy dla Mozilli.
 Summary:	Mozilla Java plugin
 Summary(pl):	Wtyczka Javy do Mozilli
 Group:		Development/Languages/Java
-PreReq:		mozilla-embedded
+Requires:	mozilla-embedded
 Requires:	%{name}-mozilla-plugin = %{version}-%{release}
 Obsoletes:	blackdown-java-sdk-mozilla-plugin
 Obsoletes:	java-sun-moz-plugin
@@ -226,7 +226,7 @@ Wtyczka z obs³ug± Javy dla Mozilli skompilowana przy u¿yciu gcc 3.
 Summary:	Mozilla Firefox Java plugin
 Summary(pl):	Wtyczka Javy do Mozilli Firefox
 Group:		Development/Languages/Java
-PreReq:		mozilla-firefox
+Requires:	mozilla-firefox
 Requires:	%{name}-mozilla-plugin = %{version}-%{release}
 Obsoletes:	mozilla-firefox-plugin-java-blackdown
 Obsoletes:	mozilla-firefox-plugin-gcc2-java-sun
@@ -478,7 +478,7 @@ fi
 %{jredir}/lib/images
 %dir %{jredir}/lib/security
 %{jredir}/lib/security/*.*
-%verify(not md5 size mtime) %config(noreplace) %{jredir}/lib/security/cacerts
+%verify(not md5 mtime size) %config(noreplace) %{jredir}/lib/security/cacerts
 %{jredir}/lib/zi
 %{jredir}/lib/*.jar
 %{jredir}/lib/*.properties
