@@ -1,6 +1,6 @@
 %define		fversion	%(echo %{version} |tr r _)
 Summary:	WebLogic JRockit
-Summary(pl):	¶rodowisko WebLogic JRockit
+Summary(pl.UTF-8):   ≈örodowisko WebLogic JRockit
 Name:		java-bea
 Version:	1.4.2r04
 Release:	0.1.1
@@ -52,12 +52,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Java Development Kit for Linux.
 
-%description -l pl
-¶rodowisko programistyczne Javy dla Linuksa.
+%description -l pl.UTF-8
+≈örodowisko programistyczne Javy dla Linuksa.
 
 %package jre-jdbc
 Summary:	JDBC files for Sun Java
-Summary(pl):	Pliki JDBC dla Javy Suna
+Summary(pl.UTF-8):   Pliki JDBC dla Javy Suna
 Group:		Development/Languages/Java
 Requires:	%{name}-jre = %{version}-%{release}
 Provides:	%{name}-jdbc
@@ -67,12 +67,12 @@ Requires:	libodbcinst.so.1
 %description jre-jdbc
 This package contains JDBC files for Sun Java.
 
-%description jre-jdbc -l pl
+%description jre-jdbc -l pl.UTF-8
 Ten pakiet zawiera pliki JDBC dla Javy Suna.
 
 %package jre
 Summary:	Sun JRE (Java Runtime Environment) for Linux
-Summary(pl):	Sun JRE - ∂rodowisko uruchomieniowe Javy dla Linuksa
+Summary(pl.UTF-8):   Sun JRE - ≈õrodowisko uruchomieniowe Javy dla Linuksa
 Group:		Development/Languages/Java
 Requires:	XFree86-libs
 Requires:	java-jre-tools
@@ -106,12 +106,12 @@ Obsoletes:	jdbc-stdext
 %description jre
 Java Runtime Environment for Linux.
 
-%description jre -l pl
-¶rodowisko uruchomieniowe Javy dla Linuksa.
+%description jre -l pl.UTF-8
+≈örodowisko uruchomieniowe Javy dla Linuksa.
 
 %package jre-alsa
 Summary:	JRE module for ALSA sound support
-Summary(pl):	Modu≥ JRE do obs≥ugi dºwiÍku poprzez ALSA
+Summary(pl.UTF-8):   Modu≈Ç JRE do obs≈Çugi d≈∫wiƒôku poprzez ALSA
 Group:		Development/Languages/Java
 Requires:	%{name}-jre = %{version}-%{release}
 Provides:	%{name}-alsa
@@ -119,12 +119,12 @@ Provides:	%{name}-alsa
 %description jre-alsa
 JRE module for ALSA sound support.
 
-%description jre-alsa -l pl
-Modu≥ JRE do obs≥ugi dºwiÍku poprzez ALSA.
+%description jre-alsa -l pl.UTF-8
+Modu≈Ç JRE do obs≈Çugi d≈∫wiƒôku poprzez ALSA.
 
 %package tools
 Summary:	Shared Java tools
-Summary(pl):	WspÛ≥dzielone narzÍdzia Javy
+Summary(pl.UTF-8):   Wsp√≥≈Çdzielone narzƒôdzia Javy
 Group:		Development/Languages/Java
 Requires:	%{name}-jre = %{version}-%{release}
 Provides:	jar
@@ -137,13 +137,13 @@ Obsoletes:	fastjar
 This package contains tools that are common for every Java(TM)
 implementation, such as rmic or jar.
 
-%description tools -l pl
-Pakiet ten zawiera narzÍdzia wspÛlne dla kaødej implementacji
+%description tools -l pl.UTF-8
+Pakiet ten zawiera narzƒôdzia wsp√≥lne dla ka≈ºdej implementacji
 Javy(TM), takie jak rmic czy jar.
 
 %package jre-tools
 Summary:	Shared Java tools
-Summary(pl):	WspÛ≥dzielone narzÍdzia Javy
+Summary(pl.UTF-8):   Wsp√≥≈Çdzielone narzƒôdzia Javy
 Group:		Development/Languages/Java
 Requires:	%{name}-jre = %{version}-%{release}
 Provides:	java-jre-tools
@@ -152,13 +152,13 @@ Provides:	java-jre-tools
 This package contains tools that are common for every Java(TM)
 implementation, such as rmic or jar.
 
-%description jre-tools -l pl
-Pakiet ten zawiera narzÍdzia wspÛlne dla kaødej implementacji
+%description jre-tools -l pl.UTF-8
+Pakiet ten zawiera narzƒôdzia wsp√≥lne dla ka≈ºdej implementacji
 Javy(TM), takie jak rmic czy jar.
 
 %package demos
 Summary:	JDK demonstration programs
-Summary(pl):	Programy demonstracyjne do JDK
+Summary(pl.UTF-8):   Programy demonstracyjne do JDK
 Group:		Development/Languages/Java
 Requires:	%{name}-jre = %{version}-%{release}
 Obsoletes:	java-blackdown-demos
@@ -167,12 +167,12 @@ Obsoletes:	jdk-demos
 %description demos
 JDK demonstration programs.
 
-%description demos -l pl
+%description demos -l pl.UTF-8
 Programy demonstracyjne do JDK.
 
 %package -n netscape4-plugin-%{name}
 Summary:	Netscape 4.x Java plugin
-Summary(pl):	Wtyczka Javy do Netscape 4.x
+Summary(pl.UTF-8):   Wtyczka Javy do Netscape 4.x
 Group:		Development/Languages/Java
 Requires:	%{name}-jre = %{version}-%{release}
 Requires:	netscape-common >= 4.0
@@ -184,12 +184,12 @@ Obsoletes:	jre-netscape4-plugin
 %description -n netscape4-plugin-%{name}
 Java plugin for Netscape 4.x.
 
-%description -n netscape4-plugin-%{name} -l pl
-Wtyczka z obs≥ug± Javy dla Netscape 4.x.
+%description -n netscape4-plugin-%{name} -l pl.UTF-8
+Wtyczka z obs≈ÇugƒÖ Javy dla Netscape 4.x.
 
 %package mozilla-plugin
 Summary:	Mozilla Java plugin file
-Summary(pl):	Plik wtyczki Javy do Mozilli
+Summary(pl.UTF-8):   Plik wtyczki Javy do Mozilli
 Group:		Development/Languages/Java
 Requires:	%{name}-jre = %{version}-%{release}
 Obsoletes:	java-blackdown-mozilla-plugin
@@ -197,12 +197,12 @@ Obsoletes:	java-blackdown-mozilla-plugin
 %description mozilla-plugin
 Java plugin file for Mozilla.
 
-%description mozilla-plugin -l pl
-Plik wtyczki z obs≥ug± Javy dla Mozilli.
+%description mozilla-plugin -l pl.UTF-8
+Plik wtyczki z obs≈ÇugƒÖ Javy dla Mozilli.
 
 %package -n mozilla-plugin-%{name}
 Summary:	Mozilla Java plugin
-Summary(pl):	Wtyczka Javy do Mozilli
+Summary(pl.UTF-8):   Wtyczka Javy do Mozilli
 Group:		Development/Languages/Java
 Requires:	mozilla-embedded
 Requires:	%{name}-mozilla-plugin = %{version}-%{release}
@@ -219,12 +219,12 @@ Obsoletes:	mozilla-plugin-gcc32-java-sun
 %description -n mozilla-plugin-%{name}
 Java plugin for Mozilla compiled using gcc 3.
 
-%description -n mozilla-plugin-%{name} -l pl
-Wtyczka z obs≥ug± Javy dla Mozilli skompilowana przy uøyciu gcc 3.
+%description -n mozilla-plugin-%{name} -l pl.UTF-8
+Wtyczka z obs≈ÇugƒÖ Javy dla Mozilli skompilowana przy u≈ºyciu gcc 3.
 
 %package -n mozilla-firefox-plugin-%{name}
 Summary:	Mozilla Firefox Java plugin
-Summary(pl):	Wtyczka Javy do Mozilli Firefox
+Summary(pl.UTF-8):   Wtyczka Javy do Mozilli Firefox
 Group:		Development/Languages/Java
 Requires:	mozilla-firefox
 Requires:	%{name}-mozilla-plugin = %{version}-%{release}
@@ -235,8 +235,8 @@ Obsoletes:	mozilla-firefox-plugin-gcc3-java-sun
 %description -n mozilla-firefox-plugin-%{name}
 Java plugin for Mozilla Firefox compiled using gcc 3.
 
-%description -n mozilla-firefox-plugin-%{name} -l pl
-Wtyczka z obs≥ug± Javy dla Mozilli Firefox skompilowana przy uøyciu
+%description -n mozilla-firefox-plugin-%{name} -l pl.UTF-8
+Wtyczka z obs≈ÇugƒÖ Javy dla Mozilli Firefox skompilowana przy u≈ºyciu
 gcc 3.
 
 %prep
