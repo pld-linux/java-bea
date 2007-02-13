@@ -1,6 +1,6 @@
 %define		fversion	%(echo %{version} |tr r _)
 Summary:	WebLogic JRockit
-Summary(pl.UTF-8):   Środowisko WebLogic JRockit
+Summary(pl.UTF-8):	Środowisko WebLogic JRockit
 Name:		java-bea
 Version:	1.4.2r04
 Release:	0.1.1
@@ -57,7 +57,7 @@ Java Development Kit for Linux.
 
 %package jre-jdbc
 Summary:	JDBC files for Sun Java
-Summary(pl.UTF-8):   Pliki JDBC dla Javy Suna
+Summary(pl.UTF-8):	Pliki JDBC dla Javy Suna
 Group:		Development/Languages/Java
 Requires:	%{name}-jre = %{version}-%{release}
 Provides:	%{name}-jdbc
@@ -72,7 +72,7 @@ Ten pakiet zawiera pliki JDBC dla Javy Suna.
 
 %package jre
 Summary:	Sun JRE (Java Runtime Environment) for Linux
-Summary(pl.UTF-8):   Sun JRE - środowisko uruchomieniowe Javy dla Linuksa
+Summary(pl.UTF-8):	Sun JRE - środowisko uruchomieniowe Javy dla Linuksa
 Group:		Development/Languages/Java
 Requires:	XFree86-libs
 Requires:	java-jre-tools
@@ -111,7 +111,7 @@ Java Runtime Environment for Linux.
 
 %package jre-alsa
 Summary:	JRE module for ALSA sound support
-Summary(pl.UTF-8):   Moduł JRE do obsługi dźwięku poprzez ALSA
+Summary(pl.UTF-8):	Moduł JRE do obsługi dźwięku poprzez ALSA
 Group:		Development/Languages/Java
 Requires:	%{name}-jre = %{version}-%{release}
 Provides:	%{name}-alsa
@@ -124,7 +124,7 @@ Moduł JRE do obsługi dźwięku poprzez ALSA.
 
 %package tools
 Summary:	Shared Java tools
-Summary(pl.UTF-8):   Współdzielone narzędzia Javy
+Summary(pl.UTF-8):	Współdzielone narzędzia Javy
 Group:		Development/Languages/Java
 Requires:	%{name}-jre = %{version}-%{release}
 Provides:	jar
@@ -143,7 +143,7 @@ Javy(TM), takie jak rmic czy jar.
 
 %package jre-tools
 Summary:	Shared Java tools
-Summary(pl.UTF-8):   Współdzielone narzędzia Javy
+Summary(pl.UTF-8):	Współdzielone narzędzia Javy
 Group:		Development/Languages/Java
 Requires:	%{name}-jre = %{version}-%{release}
 Provides:	java-jre-tools
@@ -158,7 +158,7 @@ Javy(TM), takie jak rmic czy jar.
 
 %package demos
 Summary:	JDK demonstration programs
-Summary(pl.UTF-8):   Programy demonstracyjne do JDK
+Summary(pl.UTF-8):	Programy demonstracyjne do JDK
 Group:		Development/Languages/Java
 Requires:	%{name}-jre = %{version}-%{release}
 Obsoletes:	java-blackdown-demos
@@ -172,7 +172,7 @@ Programy demonstracyjne do JDK.
 
 %package -n netscape4-plugin-%{name}
 Summary:	Netscape 4.x Java plugin
-Summary(pl.UTF-8):   Wtyczka Javy do Netscape 4.x
+Summary(pl.UTF-8):	Wtyczka Javy do Netscape 4.x
 Group:		Development/Languages/Java
 Requires:	%{name}-jre = %{version}-%{release}
 Requires:	netscape-common >= 4.0
@@ -189,7 +189,7 @@ Wtyczka z obsługą Javy dla Netscape 4.x.
 
 %package mozilla-plugin
 Summary:	Mozilla Java plugin file
-Summary(pl.UTF-8):   Plik wtyczki Javy do Mozilli
+Summary(pl.UTF-8):	Plik wtyczki Javy do Mozilli
 Group:		Development/Languages/Java
 Requires:	%{name}-jre = %{version}-%{release}
 Obsoletes:	java-blackdown-mozilla-plugin
@@ -202,7 +202,7 @@ Plik wtyczki z obsługą Javy dla Mozilli.
 
 %package -n mozilla-plugin-%{name}
 Summary:	Mozilla Java plugin
-Summary(pl.UTF-8):   Wtyczka Javy do Mozilli
+Summary(pl.UTF-8):	Wtyczka Javy do Mozilli
 Group:		Development/Languages/Java
 Requires:	mozilla-embedded
 Requires:	%{name}-mozilla-plugin = %{version}-%{release}
@@ -224,7 +224,7 @@ Wtyczka z obsługą Javy dla Mozilli skompilowana przy użyciu gcc 3.
 
 %package -n mozilla-firefox-plugin-%{name}
 Summary:	Mozilla Firefox Java plugin
-Summary(pl.UTF-8):   Wtyczka Javy do Mozilli Firefox
+Summary(pl.UTF-8):	Wtyczka Javy do Mozilli Firefox
 Group:		Development/Languages/Java
 Requires:	mozilla-firefox
 Requires:	%{name}-mozilla-plugin = %{version}-%{release}
