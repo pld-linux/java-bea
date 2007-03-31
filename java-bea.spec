@@ -252,7 +252,7 @@ chmod +x %{SOURCE0}
 mv $RPM_BUILD_ROOT%{javadir}/man/man1/* $RPM_BUILD_ROOT%{_mandir}/man1
 mv $RPM_BUILD_ROOT%{javadir}/man/ja_JP.eucJP/man1/* $RPM_BUILD_ROOT%{_mandir}/ja/man1
 
-# conflict with heimdal
+# conflict with heimdal/krb5
 for i in kinit klist ; do
 	ln -sf %{javadir}/bin/$i $RPM_BUILD_ROOT%{_bindir}/j$i
 	mv -f $RPM_BUILD_ROOT%{_mandir}/man1/${i}.1 $RPM_BUILD_ROOT%{_mandir}/man1/j${i}.1
