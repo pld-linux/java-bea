@@ -102,6 +102,7 @@ Obsoletes:	jaas
 Obsoletes:	jsse
 Obsoletes:	jce
 Obsoletes:	jdbc-stdext
+Requires:	jpackage-utils
 
 %description jre
 Java Runtime Environment for Linux.
