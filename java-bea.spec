@@ -39,7 +39,6 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define	netscape4dir	/usr/%{_lib}/netscape
 %define	mozilladir	/usr/%{_lib}/mozilla
 %define	firefoxdir	/usr/%{_lib}/mozilla-firefox
-%define	no_install_post_strip	1
 
 # rpm doesn't like strange version definitions provided by Sun's libs
 #%%define		_noautoprov	'\\.\\./.*' '/export/.*'
