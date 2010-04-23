@@ -31,7 +31,6 @@ Obsoletes:	java-sun
 Obsoletes:	jdk
 Obsoletes:	kaffe
 Conflicts:	netscape4-plugin-java-sun
-ExclusiveArch:	i586 i686 pentium3 pentium4 athlon ia64
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define	javadir		%{_libdir}/java
